@@ -4,7 +4,7 @@ import Home from './components/Home';
 import Footer from './components/Footer';
 import SignIn from './data/SignIn';
 import SignUp from './data/SignUp';
-import { BrowserRouter as Router, NavLink, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (

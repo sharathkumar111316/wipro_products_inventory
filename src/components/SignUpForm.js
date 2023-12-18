@@ -44,8 +44,8 @@ const FormikSignUpForm = withFormik({
         password: Yup.string().min(3, "Password must be atleast 3 characters.").required("Password is Required."),
         confirmpassword: Yup.string().oneOf([Yup.ref('password'), null], 'Passwords must match').required("Confirm Password")
     }),
-    handleSubmit(values, { props, resetForm, setSubmitting }) {
-        props.onSubmit(values)
+    handleSubmit(formData, { props, resetForm, setSubmitting }) {
+        props.onSubmit(formData)
         setSubmitting(false);
         resetForm();
     }

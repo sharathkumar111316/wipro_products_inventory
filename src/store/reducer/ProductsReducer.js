@@ -3,7 +3,7 @@ const initialState = {
 }
 
 const ProductsReducer = (state = initialState, action) => {
-    if (action.type == "LIST_PRODUCTS") {
+    if (action.type === "LIST_PRODUCTS") {
         return {
             ...state, products: action.payload //action.payload will return the data in object format
         }
